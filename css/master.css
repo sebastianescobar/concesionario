@@ -1,0 +1,27 @@
+body{
+	background-color: #0F93D8;
+
+}
+a{
+	color: 	#E43131;
+	
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+h1{
+	color: 	#E43131;
+	font-family: courier;
+}
+
+.btn-group{
+	position: absolute;
+	margin-left: 527px;
+}
+.table-condensed{
+	margin-left: 450px;
+}
+.table-condensed td{
+	padding: 25px;
+}
