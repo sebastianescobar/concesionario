@@ -1,5 +1,4 @@
 <?php require "../connection.php" ;
-	require "../public/seguridad1.php";
 
 
 ?>
