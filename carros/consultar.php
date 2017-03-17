@@ -46,40 +46,36 @@
 											<td>Color</td>
 											<td><?php echo $usuario['color'] ?></td>
 										</tr>
-										<?php if ($id == 1): ?> 
-										<tr>
-											<td>foto</td>
-											<td> 	
-												<img src='../imgs/audi-r8.jpg'>
-
-											</td>
-										</tr>
-										<?php endif; ?>
-										
 										<?php if ($id == 2): ?> 
 										<tr>
 											<td>foto</td>
 											<td> 	
-												<img src='../imgs/bmw_2.jpg'>
-
+												<img src="../imgs/shelby.jpg">
 											</td>
 										</tr>
 										<?php endif; ?>
-										<?php if ($id == 3): ?> 
+										
+										<?php if ($id == 4): ?> 
 										<tr>
 											<td>foto</td>
 											<td> 	
-												<img src='../imgs/Mazda-allegro-9.jpg'>
-
+												<img src="../imgs/eleanor.jpg">
+											</td>
+										</tr>
+										<?php endif; ?>
+										<?php if ($id == 6): ?> 
+										<tr>
+											<td>foto</td>
+											<td> 	
+												<img src="../imgs/gt.jpg">
 											</td>
 										</tr>
 										<?php endif; ?>
 									<?php endwhile; ?>
 
 								</table>
-									<a href="../catalogo/venta_carros.php"><button type="button" class="btn btn-default" aria-label="Left Align"></a>
-  									<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-									</button>
+									<a href="../catalogo/venta_carros.php"><button type="button" class=" 0btn btn-default" aria-label="Left Align"> <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+									</button></a>
 
 							</div>
 					</div>
