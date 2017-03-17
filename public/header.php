@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Consecionario</title>
-	<link rel="stylesheet" href="http://localhost/hola/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://localhost/hola/css/master.css">
+	<link rel="stylesheet" href="http://localhost/concesionario/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://localhost/concesionario/css/master.css">
 	
 	
 </head>
