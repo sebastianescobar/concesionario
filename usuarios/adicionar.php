@@ -3,7 +3,7 @@
 		require "../connection.php";
 		
 ?>
- <body background="imgs/fondo1.jpg" style="background-size: cover; ">
+ <body background="../imgs/fondo1.jpg" style="background-size: cover; ">
 
 	<div class="text-center">
 		<h1>Adicionar usuarios</h1>

@@ -4,7 +4,7 @@
 	require "../public/seguridad1.php";
 		
 ?>
- <body background="imgs/fondo1.jpg" style="background-size: cover; ">
+ <body background="../imgs/fondo1.jpg" style="background-size: cover; ">
 
 	
 	<div class="text-center">

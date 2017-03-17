@@ -10,7 +10,7 @@
 			$info     = mysqli_fetch_array($usuarios);
 		}
 ?>
- <body background="imgs/fondo1.jpg" style="background-size: cover; ">
+ <body background="../imgs/fondo1.jpg" style="background-size: cover; ">
 
 	<div class="text-center">
 		<div class="text-center">
