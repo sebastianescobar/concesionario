@@ -26,7 +26,7 @@
 		<h1>Dashboard</h1>
 		
 	</div>
-	<ul class="nav nav-pills nav-stacked">
+	<ul class="nav nav-pills nav-stacked col-md-2">
   		<li role="presentation" class="active "><a href="#">Home</a></li>
   		<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuarios<span class="caret"></span></a>

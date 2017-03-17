@@ -47,7 +47,7 @@
 										<tr>
 											<td>foto</td>
 											<td> 	
-												<img src='../audi-r8.jpg'>
+												<img src='../imgs/audi-r8.jpg'>
 
 											</td>
 										</tr>
@@ -57,7 +57,7 @@
 										<tr>
 											<td>foto</td>
 											<td> 	
-												<img src='../bmw_2.jpg'>
+												<img src='../imgs/bmw_2.jpg'>
 
 											</td>
 										</tr>
@@ -66,7 +66,7 @@
 										<tr>
 											<td>foto</td>
 											<td> 	
-												<img src='../Mazda-allegro-9.jpg'>
+												<img src='../imgs/Mazda-allegro-9.jpg'>
 
 											</td>
 										</tr>
@@ -74,7 +74,7 @@
 									<?php endwhile; ?>
 
 								</table>
-									<button type="button" class="btn btn-default" aria-label="Left Align">
+									<a href="../catalogo/venta_carros.php"><button type="button" class="btn btn-default" aria-label="Left Align"></a>
   									<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
 									</button>
 
