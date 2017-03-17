@@ -5,6 +5,8 @@
 
 
 ?>
+ <body background="imgs/fondo1.jpg" style="background-size: cover; ">
+
 	<style>
 		table{
 			position: absolute;

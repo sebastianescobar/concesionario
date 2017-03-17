@@ -15,6 +15,9 @@
 			border-radius: 2%;
 		}
 	</style>
+
+ <body background="imgs/fondo1.jpg" style="background-size: cover; ">
+
  	
  	<div class="text-center">
 		<h1>Consultas</h1>

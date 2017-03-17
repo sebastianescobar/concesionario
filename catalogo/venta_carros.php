@@ -16,6 +16,8 @@
 
  
  ?>
+ <body background="imgs/fondo1.jpg" style="background-size: cover; ">
+ 
 	<div class="text-center">
 		
 		<ul>
