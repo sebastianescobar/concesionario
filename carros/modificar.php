@@ -1,6 +1,7 @@
+<?php require "../connection.php"; ?>
 <?php 	
 		require "../public/header.php";
-		require "../connection.php";
+		
 	require "../public/seguridad1.php";
 		
 		if($_GET){
@@ -50,9 +51,9 @@
 						
 
 
-							$sql = "UPDATE usuarios 
+							$sql = "UPDATE carros 
 							  SET  referencia = '$referencia', 
-							       marca      =  $marca, 
+							       marca      =  '$marca', 
 							       modelo        = '$modelo', 
 							       color      = '$color'
 					       	  WHERE id = $id";

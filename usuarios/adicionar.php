@@ -39,7 +39,7 @@
 				<input type="email" name="correo" placeholder="Correo">
 			</div>
 			<div class="container">
-				<label>Contraseaña</label>
+				<label>Contraseña</label>
 				<input type="password" name="clave" placeholder="contraseña">
 			</div>
 			<div class="container">
@@ -65,12 +65,13 @@
 					$celular = $_POST['celular'];
 
 
-					if ($tipo_documento !="" && $documento !="" && $nombres !="" && $apellidos !="" && $correo !="" && $clave !="" && $celular !="" ) {
+					if ($tipo_documento !="" && $documento !="" && $nombres !="" && $apellidos 
+					 !="" && $correo !="" && $clave !="" && $celular !="") {
 							
 						
 
 
-							$adicionar = mysqli_query($conx, "INSERT INTO usuarios VALUES('', '$tipo_documento', $documento, '$nombres', '$apellidos', '$genero', '$correo', $clave, $celular)");
+							$adicionar = mysqli_query($conx, "INSERT INTO usuarios VALUES('', '$tipo_documento', $documento, '$nombres', '$apellidos', '$genero', '$correo', '$clave', $celular)");
 							if ($adicionar) {
 								echo "
 									<script>
@@ -79,24 +80,17 @@
 									</script> 
 								 ";
 							}
-						}
-						else{
+						}else{
 							echo "
 							<script>
 								alert('Llene todos los campos...');
 							</script>
 								";
-						}	
+						}
+							
 					}
-			else{
-					echo "
-						<script>
-							alert('Llene todos los campos...');
-						</script>
-					";
-					}
-
 				}
+			
 	 ?>
 
 <?php  require "../public/footer.php";	?>
