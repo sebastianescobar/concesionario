@@ -4,8 +4,8 @@ body{
 }
 a{
 	color: 	#E43131;
-	
 	text-decoration: none;
+	text-transform: uppercase;
 }
 a:hover{
 	text-decoration: none;
@@ -24,4 +24,10 @@ h1{
 }
 .table-condensed td{
 	padding: 25px;
+}
+button.btn{
+	left: 500px;
+	top: 16px;
+	position: relative;
+	color: #000;
 }

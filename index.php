@@ -16,7 +16,7 @@
  
 	<div class="container">
 		
-		<a href="usuarios/adicionar.php">Registrarse</a>
+		<button class="btn"><a href="usuarios/adicionar.php">Registrarse</a></button>
 		<hr>
 		<form method="post" >
 			<div class="input-group">
