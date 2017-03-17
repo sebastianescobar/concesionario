@@ -14,7 +14,6 @@
 ?>
 	<div class="container">
 		
-		<h1 class="text-center">Login</h1>
 		<a href="usuarios/adicionar.php">Registrarse</a>
 		<hr>
 		<form method="post" >
