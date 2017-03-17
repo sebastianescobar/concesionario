@@ -12,6 +12,8 @@
 		 ";
 	}
 ?>
+ <body background="imgs/fondo.jpg" style="background-size: cover; ">
+ 
 	<div class="container">
 		
 		<a href="usuarios/adicionar.php">Registrarse</a>
