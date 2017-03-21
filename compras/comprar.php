@@ -6,7 +6,7 @@ require"../connection.php";
 <body background="../imgs/fondo1.jpg" style="background-size: cover; ">
 <div class="text-center">
 	<h1>comprar</h1>
-	<a href="index.php">regresar</a>
+	<a href="../catalogo/venta_carros.php">regresar</a>
 	<hr>
 	<form method="post" class="form-group">
 		<div class="container">

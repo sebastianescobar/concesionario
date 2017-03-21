@@ -39,11 +39,13 @@
           </ul>
         </li>
  		<li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Marcas<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vehiculos<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="carros/index.php">Consultar</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="carros/adicionar.php">Adicionar</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="catalogo/venta_carros.php">Catalogo</a></li>
 
           </ul>
         </li>
