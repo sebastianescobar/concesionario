@@ -15,9 +15,8 @@
 
 		echo " 
 		<script>
-			alert(' ecompra cancelada con exito...')
+			alert('compra eliminada con exito...')
 			window.location.replace('index.php');
 		</script>  
 		"
 	?> 
-	

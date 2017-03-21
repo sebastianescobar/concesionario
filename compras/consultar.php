@@ -8,6 +8,7 @@
 		<h1>Consultar compra</h1>
 		<a href="index.php">Regresar</a>
 		<hr>
+
 		<?php 	if ($_GET) {
 
 					$id = $_GET['id'];
@@ -56,7 +57,7 @@
 				$usuarios = mysqli_query($conx, "SELECT * FROM compras WHERE id = '$id'");
 
 				while ($row=mysqli_fetch_array($usuarios)){ 
-					echo $row["numero_cuenta"]." ".$row["nombre_completo"];
+					echo $row["numero_cuenta"]." ".$row["nombre_completo"]." ".$row["referencia_vehiculo"];
 				}
 			}
 			?>
