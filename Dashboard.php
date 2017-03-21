@@ -28,7 +28,7 @@
 		
 	</div>
 	<ul class="nav nav-pills nav-stacked col-md-2">
-  		<li role="presentation" class="active "><a href="#">Home</a></li>
+  		<li role="presentation" class="active "><a href="#">Inicio</a></li>
   		<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuarios<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -47,7 +47,11 @@
 
           </ul>
         </li>
+        <li role="presentation"><a href="map.html">Encuentranos</a></li>
 	</ul>
+
+
+	
 
 
 

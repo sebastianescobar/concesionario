@@ -8,7 +8,7 @@ require"../connection.php";
 	<h1>comprar</h1>
 	<a href="index.php">regresar</a>
 	<hr>
-	<form method="get" class="form-group">
+	<form method="post" class="form-group">
 		<div class="container">
 			<label>numero de cuenta</label>
 			<input type="text" name="numero_cuenta" placeholder="numero de cuenta" .input-group-addon>
@@ -29,7 +29,7 @@ require"../connection.php";
 </div>
 
 <?php 
-	if ($_GET) {
+	if ($_POST) {
 		$numero_cuenta 			= $_POST["numero_cuenta"];
 		$nombre_completo		= $_POST["nombre_completo"];	
 		$referencia_vehiculo	= $_POST["referencia_vehiculo"];	
