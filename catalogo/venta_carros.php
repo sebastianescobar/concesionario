@@ -84,8 +84,12 @@
 				<p class="text-center"> $54.000 euros </p>
 				<a href="../compras/comprar.php"><button type="button" class=" 0btn btn-success" aria-label="Left Align" style="position: relative; left: 135px;"> COMPRAR </button></a>
 			</article>
+			<br><br>
 			</div>
 		</div>
+		<section>
+			<a href="../chat/simchat.html"><button type="button" class=" 0btn btn-danger" aria-label="Left Align" style="position: relative; left: 658px; padding: 10px;"> CONTACTA A NUESTRO SERVIDOR</button></a>
+		</section>
 
 
 

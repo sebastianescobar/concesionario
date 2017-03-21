@@ -1,0 +1,58 @@
+body {
+  background-color: #aba;
+  font: 16px Arial;
+  color: #333;
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px auto;
+  width: 400px;
+}
+section h1 {
+  color: #fff;
+  text-align: center;
+  margin: 0px;
+}
+section nav.view {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 300px;
+  overflow-y: auto;
+}
+section nav.view ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+section nav.view ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 8px 4px;
+}
+section nav.view ul li.machine {
+  color: #666;
+  font-style: italic;
+}
+section nav.view ul li.user {
+  color: #060;
+  text-indent: 10px;
+}
+section input {
+  color: #060;
+  font-size: 14px;
+  outline: none;
+  padding: 10px;
+  width: 255px;
+}
+section button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  cursor: pointer;
+  padding: 14px 10px;
+  margin-left: -4px;
+  width: 120px;
+}
+section button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
