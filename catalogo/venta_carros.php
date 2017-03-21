@@ -30,7 +30,7 @@
 
 
  </style>
- <body background="../imgs/fon.png" style="background-size: cover; ">
+ <body background="../imgs/fon.png" style="background-size: cover;     color: #fff;">
  
 	<div class="text-center">
 		
