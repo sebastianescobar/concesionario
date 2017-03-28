@@ -46,6 +46,10 @@
 											<td>Color</td>
 											<td><?php echo $usuario['color'] ?></td>
 										</tr>
+										<tr>
+											<td>Precio</td>
+											<td><?php echo $usuario['precio'] ?></td>
+										</tr>
 										<?php if ($id == 2): ?> 
 										<tr>
 											<td>foto</td>

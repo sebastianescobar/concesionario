@@ -35,6 +35,10 @@
 				<input type="text" name="color" placeholder="color" value="<?php echo $info['color'] ?>">
 			</div>
 			<div class="container">
+				<label>precio</label>
+				<input type="text" name="precio" placeholder="precio" value="<?php echo $info['precio'] ?>">
+			</div>
+			<div class="container">
 				<input type="submit">
 			</div>
 		</form>
@@ -46,9 +50,10 @@
 					$marca = $_POST['marca'];
 					$modelo = $_POST['modelo'];
 					$color = $_POST['color'];
+					$precio = $_POST['precio'];
 
 
-					if ($referencia !="" && $marca !="" && $modelo !="" && $color !="" ) {
+					if ($referencia !="" && $marca !="" && $modelo !="" && $color !="" && $precio !="") {
 							
 						
 
@@ -56,8 +61,9 @@
 							$sql = "UPDATE carros 
 							  SET  referencia = '$referencia', 
 							       marca      =  '$marca', 
-							       modelo        = '$modelo', 
-							       color      = '$color'
+							       modelo       = '$modelo', 
+							       color      = '$color',
+							       precio  = '$precio'
 					       	  WHERE id = $id";
 
 
@@ -66,7 +72,7 @@
 							if ($modificar) {
 								echo "
 									<script>
-										alert('Usuario registrado con exito...');
+										alert('Carro modificado registrado con exito...');
 										window.location.replace('index.php');
 									</script> 
 								 ";

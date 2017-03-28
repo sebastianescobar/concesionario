@@ -22,7 +22,11 @@
 			</div>
 			<div class="container">
 				<label>Modelo</label>
-				<input type="numer" name="modelo" placeholder="Modelos">
+				<input type="number" name="modelo" placeholder="Modelos">
+			</div>
+			<div class="container">
+				<label>precio</label>
+				<input type="number" name="precio" placeholder="Precio">
 			</div>
 			<div class="container">
 				<label>color</label>
@@ -40,14 +44,16 @@
 					$marca = $_POST['marca'];
 					$modelo = $_POST['modelo'];
 					$color = $_POST['color'];
+					$precio = $_POST['precio'];
 
 
-					if ($referencia !="" && $modelo !="" && $color !="" && $marca !="" ) {
+
+					if ($referencia !="" && $modelo !="" && $color !="" && $marca !="" &&  $precio !="") {
 							
 						
 
 
-							$adicionar = mysqli_query($conx, "INSERT INTO carros VALUES('', '$referencia', '$marca', '$modelo', '$color')");
+							$adicionar = mysqli_query($conx, "INSERT INTO carros VALUES('', '$referencia', '$marca', '$modelo', '$color', '$precio')");
 							if ($adicionar) {
 								echo "
 									<script>
