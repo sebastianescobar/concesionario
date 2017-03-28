@@ -65,25 +65,28 @@
 	</div>
 
 	<?php 
-		if ($_POST) {
+		if ($_FILES) {
 			if(isset($_POST['genero'])){	
+					$path = $_FILES['image']['name'];
+                  	$extension = pathinfo($path, PATHINFO_EXTENSION);
+                  	$nimage = time();
 					$tipo_documento = $_POST['tipo_documento'];
 					$documento = $_POST['documento'];
 					$nombres = $_POST['nombres'];
 					$apellidos = $_POST['apellidos'];
+                  	$image = '../public/imgs/avatars/'.$nimage.'.'.$extension;
 					$genero = $_POST['genero'];
 					$correo = $_POST['correo'];
 					$clave = $_POST['clave'];
 					$celular = $_POST['celular'];
 
 
-					if ($tipo_documento !="" && $documento !="" && $nombres !="" && $apellidos 
-					 !="" && $correo !="" && $clave !="" && $celular !="") {
+					if (!empty($_FILES['image']['tmp_name'])) {
 							
 						
+							move_uploaded_file($_FILES['image']['tmp_name'], $image);
 
-
-							$adicionar = mysqli_query($conx, "INSERT INTO usuarios VALUES('', '$tipo_documento', $documento, '$nombres', '$apellidos', '$genero', '$correo', '$clave', $celular)");
+							$adicionar = mysqli_query($conx, "INSERT INTO usuarios VALUES('', '$tipo_documento', $documento, '$nombres', '$apellidos', '$image', '$genero', '$correo', '$clave', $celular)");
 							if ($adicionar) {
 								echo "
 									<script>
