@@ -54,20 +54,6 @@
 
 
 
-	<?php 
-		if ($_POST) {
-
-
-				$id = $_POST["id"];
-				
-				$usuarios = mysqli_query($conx, "SELECT * FROM usuarios WHERE id = '$id'");
-
-				while ($row=mysqli_fetch_array($usuarios)){ 
-					echo $row["tipo_documento"]." ".$row["documento"]." ".$row["nombres"]." ".$row["apellidos"]." ".$row["genero"]." ".$row["correo"]." ".$row["celular"];
-				} 
-			}
-
-	 ?>
 
 
 <?php require "../public/footer.php" ?>
