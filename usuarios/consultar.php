@@ -41,6 +41,10 @@
 											<td>Celular</td>
 											<td>$usuario[celular]</td> 
 										</tr>
+										<tr>
+											<td>foto</td>
+											<td><img src='$usuario[image]'  style='width: 209px; height: 209px;'></td>
+										</tr>
 								</table>	
 							</div>
 						 ";
