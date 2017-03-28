@@ -6,7 +6,7 @@
 		
 		if($_GET){
 			$id = $_GET['id'];
-			$usuarios = mysqli_query($conx, "SELECT * FROM carros WHERE id = $id ");
+			$usuarios = mysqli_query($conx, "SELECT * FROM compras WHERE id = $id ");
 			$info     = mysqli_fetch_array($usuarios);
 		}
 ?>
@@ -19,45 +19,41 @@
 		<hr>
 		<form method="post" class="form-group">
 			<div class="container">
-				<label>Referencia</label>
-				<input type="text" name="referencia" placeholder="Referencia" value="<?php echo $info['referencia'] ?>" .input-group-addon>
+				<label>numero de cuenta</label>
+				<input type="number" name="numero_cuenta" placeholder="numero de cuenta" value="<?php echo $info['numero_cuenta'] ?>" .input-group-addon>
 			</div>
 			<div class="container">
-				<label>Marca</label>
-				<input type="text" name="marca" placeholder="Marca" value="<?php echo $info['marca'] ?>" .input-group-addon>
+				<label>nombre completo</label>
+				<input type="text" name="nombre_completo" placeholder="nombre completo" value="<?php echo $info['nombre_completo'] ?>" .input-group-addon>
 			</div>
 			<div class="container">
-				<label>Modelo</label>
-				<input type="numer" name="modelo" placeholder="Modelo" value="<?php echo $info['modelo'] ?>">
-			</div>
-			<div class="container">
-				<label>color</label>
-				<input type="text" name="color" placeholder="color" value="<?php echo $info['color'] ?>">
+				<label>referencia del vehiculo</label>
+				<input type="text" name="referencia_vehiculo" placeholder="referencia del vehiculo" value="<?php echo $info['referencia_vehiculo'] ?>">
 			</div>
 			<div class="container">
 				<input type="submit">
 			</div>
+			
 		</form>
 	</div>
 
 	<?php 
 		if ($_POST) {
-					$referencia = $_POST['referencia'];
-					$marca = $_POST['marca'];
-					$modelo = $_POST['modelo'];
-					$color = $_POST['color'];
+					$numero_cuenta = $_POST['numero_cuenta'];
+					$nombre_completo = $_POST['nombre_completo'];
+					$referencia_vehiculo = $_POST['referencia_vehiculo'];
+					
 
 
-					if ($referencia !="" && $marca !="" && $modelo !="" && $color !="" ) {
+					if ($numero_cuenta !="" && $nombre_completo !="" && $referencia_vehiculo !="" ) {
 							
 						
 
 
-							$sql = "UPDATE carros 
-							  SET  referencia = '$referencia', 
-							       marca      =  '$marca', 
-							       modelo        = '$modelo', 
-							       color      = '$color'
+							$sql = "UPDATE compras
+							  SET  numero_cuenta = '$numero_cuenta', 
+							       nombre_completo      =  '$nombre_completo', 
+							       referencia_vehiculo        = '$referencia_vehiculo'
 					       	  WHERE id = $id";
 
 
@@ -66,7 +62,7 @@
 							if ($modificar) {
 								echo "
 									<script>
-										alert('Usuario registrado con exito...');
+										alert('compra registrada con exito...');
 										window.location.replace('index.php');
 									</script> 
 								 ";

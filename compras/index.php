@@ -40,7 +40,7 @@
 										
 										<a href='consultar.php?id=".$usuario['id']."'>Ver detalle</a>
 										<a href='modificar.php?id=".$usuario['id']."'>modificar</a>
-										<a href='javascript:;' class='eliminar-usuario' data-id='$usuario[id]' >cancelar</a>
+										<a href='javascript:;' class='eliminar-usuario' data-id='$usuario[id]' >eliminar</a>
 									</td>
 
 								</tr>
