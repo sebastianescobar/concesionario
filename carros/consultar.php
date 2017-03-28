@@ -1,7 +1,7 @@
 <?php require "../connection.php"; ?>
 <?php 
 			$id = $_GET['id'];
-			$usuarios = mysqli_query($conx, "SELECT * FROM carros where id = '$id' "); ?>
+			$sql = mysqli_query($conx, "SELECT * FROM carros where id = '$id' "); ?>
 <?php require "../public/header.php"; ?>
 <?php require "../public/seguridad1.php"; ?>
 
@@ -29,52 +29,34 @@
 
 
 								<table border='1' class='table-condensed'>
-								<?php  while ($usuario = mysqli_fetch_array($usuarios)): ?>
+								<?php  while ($row = mysqli_fetch_array($sql)): ?>
 										<tr>
 											<td>Referencia</td>
-											<td><?php echo $usuario['referencia'] ?></td>
+											<td><?php echo $row['referencia'] ?></td>
 										</tr>
 										<tr>
 											<td>Marca</td>
-											<td><?php echo $usuario['marca'] ?></td>
+											<td><?php echo $row['marca'] ?></td>
 										</tr>
 										<tr>
 											<td>Modelo</td>
-											<td><?php echo $usuario['modelo'] ?></td>
+											<td><?php echo $row['modelo'] ?></td>
 										</tr>
 										<tr>
 											<td>Color</td>
-											<td><?php echo $usuario['color'] ?></td>
+											<td><?php echo $row['color'] ?></td>
 										</tr>
 										<tr>
 											<td>Precio</td>
-											<td><?php echo $usuario['precio'] ?></td>
+											<td><?php echo $row['precio'] ?></td>
 										</tr>
-										<?php if ($id == 2): ?> 
 										<tr>
 											<td>foto</td>
 											<td> 	
-												<img src="../imgs/shelby.jpg">
+												<img src="<?php echo $row['imagen'] ?>">
 											</td>
 										</tr>
-										<?php endif; ?>
 										
-										<?php if ($id == 4): ?> 
-										<tr>
-											<td>foto</td>
-											<td> 	
-												<img src="../imgs/eleanor.jpg">
-											</td>
-										</tr>
-										<?php endif; ?>
-										<?php if ($id == 6): ?> 
-										<tr>
-											<td>foto</td>
-											<td> 	
-												<img src="../imgs/gt.jpg">
-											</td>
-										</tr>
-										<?php endif; ?>
 									<?php endwhile; ?>
 
 								</table>
@@ -92,9 +74,9 @@
 
 				$id = $_POST["id"];
 				
-				$usuarios = mysqli_query($conx, "SELECT * FROM carros WHERE id = '$id'");
+				$sql = mysqli_query($conx, "SELECT * FROM carros WHERE id = '$id'");
 
-				while ($row=mysqli_fetch_array($usuarios)){ 
+				while ($row=mysqli_fetch_array($sql)){ 
 					echo $row["referencia"]." ".$row["modelo"]." ".$row["color"];
 				} 
 			}

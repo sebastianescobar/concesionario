@@ -11,7 +11,7 @@
 		<h1>Adicionar vehiculo</h1>
 		<a href="index.php">Regresar</a>
 		<hr>
-		<form method="post" class="form-group">
+		<form method="post" class="form-group" enctype="multipart/form-data">
 			<div class="container">
 				<label>Referencia</label>
 				<input type="text" name="referencia" placeholder="Referencia" .input-group-addon>
@@ -33,18 +33,27 @@
 				<input type="text" name="color" placeholder="color">
 			</div>
 			<div class="container">
+				<label>imagen</label>
+				<input type="file" name="imagen">
+			</div>
+			<div class="container">
 				<input type="submit">
 			</div>
 		</form>
 	</div>
 
 	<?php 
+	if ($_FILES) {
 		if ($_POST) {
+					$path = $_FILES['imagen']['name'];
+                  	$extension = pathinfo($path, PATHINFO_EXTENSION);
 					$referencia = $_POST['referencia'];
 					$marca = $_POST['marca'];
+					$nimage = time();
 					$modelo = $_POST['modelo'];
 					$color = $_POST['color'];
 					$precio = $_POST['precio'];
+					$imagen = '../imgs/'.$nimage.'.'.$extension;
 
 
 
@@ -53,24 +62,34 @@
 						
 
 
-							$adicionar = mysqli_query($conx, "INSERT INTO carros VALUES('', '$referencia', '$marca', '$modelo', '$color', '$precio')");
+							
+
+							if (!empty($_FILES['imagen']['tmp_name'])) {
+							
+						
+							move_uploaded_file($_FILES['imagen']['tmp_name'], $imagen);
+
+							$adicionar = mysqli_query($conx, "INSERT INTO carros VALUES('', '$referencia', '$marca', '$modelo', '$color', '$precio', '$imagen')");
 							if ($adicionar) {
 								echo "
 									<script>
-										alert('Vehiculo registrado con exito...');
-										window.location.replace('index.php');
+										alert('vehiculo registrado con exito...');
+										window.location.replace('index.php');								
 									</script> 
 								 ";
 							}
-						}else{
+						}
+							
+							} else{
 							echo "
 							<script>
 								alert('Llene todos los campos...');
 							</script>
 								";
 						}
-							
 					}
+	}
+		
 			
 	 ?>
 
